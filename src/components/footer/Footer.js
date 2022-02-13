@@ -1,13 +1,17 @@
 import '../footer/Footer.css';
 
-function Footer(){
-    return(
+function Footer() {
+    return (
         <>
-            
-            <h3  className = "fot"> I am Ala' Alwazani :) </h3>
-            <a  className = "fota" href="http://www.facebook.com" target="_blank"> faceBook </a>
+            <div className="fot">
+            <h3 className="name"> I am Ala' Alwazani :) </h3>
+            <div className="fota">
+                <a  href="http://www.facebook.com" target="_blank"> faceBook  </a>
+                <a  href="http://www.instagram.com" target="_blank"> Instagram </a>
+            </div>
+            </div>
         </>
     );
 }
- 
+
 export default Footer;
