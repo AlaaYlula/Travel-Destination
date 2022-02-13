@@ -9,8 +9,9 @@ function Home() {
     return (
         <>
             <Header className = 'start' />
-            <Footer className = 'start' />
             <Tours className = 'start' data={data} />
+            <Footer className = 'start' />
+
 
         </>
     );
