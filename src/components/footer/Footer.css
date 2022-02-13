@@ -1,0 +1,12 @@
+.fot{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #74959A;
+}
+.fota{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: red;
+}
