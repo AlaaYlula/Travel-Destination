@@ -1,15 +1,21 @@
 import '../tours/Tours.css'
 
-function Tours(props){
-    return(
+import Tour from './tour/Tour'
+import React from "react";
+
+
+function Tours(props) {
+
+    
+   
+
+  
+   return (
         <>
-        {props.data.map(travel => {
+            {props.data.map((travel,idx) => {
                 return (
-                    <div>
-                        <h3  className = 'name'>Name : {travel.name}</h3>
-                        <img  className = 'img' src={travel.image} alt={travel.name} />
-                        <hr></hr>
-                    </div>
+                //   <Link to={`city/${travel.id}`} key = {idx}> <Tour tour={travel} /></Link> 
+                <Tour  tour={travel} key = {idx} />
                 );
             })}
         </>

@@ -1,9 +1,12 @@
 import '../header/Header.css';
 
-function Header(){
-    return(
+import Navbar from '../Navbar/Navbar'
+
+
+function Header() {
+    return (
         <>
-            <h1 className = "hed"> Welcome To My Tavel Destination Application</h1>
+        <Navbar/>
         </>
     );
 }

@@ -1,0 +1,13 @@
+.text{
+    margin: 10% 30%;
+    line-height: 1.5;   
+}
+.link:hover{
+background-color: #f8d4e1;
+}
+
+.info{
+    /* text-align: center; */
+    padding: 10px;
+    background-color: #FDEBF7;
+}
