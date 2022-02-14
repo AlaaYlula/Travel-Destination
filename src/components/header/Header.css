@@ -1,6 +1,4 @@
 .hed{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #495371;
+    float :left;
+    color: #6bb62e;
 }
