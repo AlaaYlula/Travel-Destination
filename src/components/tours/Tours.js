@@ -6,9 +6,6 @@ import React from "react";
 
 function Tours(props) {
 
-    
-   
-
   
    return (
         <>
