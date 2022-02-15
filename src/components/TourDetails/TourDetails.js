@@ -9,7 +9,7 @@ function TourDetails(props) {
     const { id } = useParams();
     const NUM_OF_LINES = 3;
 
-    const isSame = props.data.filter((travel) => {
+    const same = props.data.filter((travel) => {
         return (travel.id === id)
     });
 
@@ -24,7 +24,17 @@ function TourDetails(props) {
 
     return (
         <>
-            {isSame.map((travelid, idx) => {
+        <div className='text'>
+
+                <Link className="link" to='/'>  Home </Link>
+                <br></br>
+                <h3>{same[0].name}</h3>
+                {loadMore ? <Text numberOfLines={NUM_OF_LINES} >{same[0].info}</Text> : <Text className="info">{same[0].info}</Text>}
+                <button onClick={handleLoad}>  {loadMore ? "see More" : "see Less"}   </button>
+
+       </div>
+
+            {/* {same.map((travelid, idx) => {
                 if (loadMore) {
 
                     return (
@@ -36,7 +46,7 @@ function TourDetails(props) {
                                <h2>name : {travelid.name}</h2>
                                 <Text numberOfLines={NUM_OF_LINES}  >{travelid.info}</Text>
                                 <button onClick={handleLoad}>see More</button>
-                                <h3>{travelid.price}</h3>
+                                <h3>price : {travelid.price}</h3>
                                 <img  className = 'img' src={travelid.image}alt={travelid.name} /> 
                             </div>
 
@@ -52,7 +62,7 @@ function TourDetails(props) {
                                 <h2>name : {travelid.name}</h2>
                                 <Text className="info">{travelid.info}</Text>
                                 <button onClick={handleLoad}>see less</button>
-                                <h3>{travelid.price}</h3>
+                                <h3>price : {travelid.price}</h3>
                                 <img  className = 'img' src={travelid.image}alt={travelid.name} /> 
 
                             </div>
@@ -61,7 +71,7 @@ function TourDetails(props) {
                     );
                 }
 
-            })};
+            })}; */}
 
         </>
     );
