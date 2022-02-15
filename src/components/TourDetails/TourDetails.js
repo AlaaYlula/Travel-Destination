@@ -32,10 +32,13 @@ function TourDetails(props) {
 
                             <Link className="link" to='/'>  Home </Link>
                             <br></br>
-                            <p className="info">
+                            <div className="info">
+                               <h2>name : {travelid.name}</h2>
                                 <Text numberOfLines={NUM_OF_LINES}  >{travelid.info}</Text>
-                            </p>
-                            <button onClick={handleLoad}>see More</button>
+                                <button onClick={handleLoad}>see More</button>
+                                <h3>{travelid.price}</h3>
+                                <img  className = 'img' src={travelid.image}alt={travelid.name} /> 
+                            </div>
 
                         </div>
                     );
@@ -45,10 +48,14 @@ function TourDetails(props) {
 
                             <Link className="link" to='/'>  Home </Link>
                             <br></br>
-                            <p className="info">
+                            <div className="info">
+                                <h2>name : {travelid.name}</h2>
                                 <Text className="info">{travelid.info}</Text>
-                            </p>
-                            <button onClick={handleLoad}>see less</button>
+                                <button onClick={handleLoad}>see less</button>
+                                <h3>{travelid.price}</h3>
+                                <img  className = 'img' src={travelid.image}alt={travelid.name} /> 
+
+                            </div>
 
                         </div>
                     );
