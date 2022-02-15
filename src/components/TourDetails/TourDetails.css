@@ -1,6 +1,8 @@
 .text{
     margin: 10% 30%;
     line-height: 1.5;   
+    background-color: #FDEBF7;
+
 }
 .link:hover{
 background-color: #f8d4e1;
